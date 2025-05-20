@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho </title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <h1 class="cabecalho_titulo">Sobre mim</h1>
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo"> 
+            <h1 class="apresentacao__conteudo__titulo">Stefani Osaida</h1>
+            <p class="apresentacao__conteudo__texto">Meu nome é Stefani, tenho 23 anos e sou de Florianópolis. Sou uma pessoa dedicada, curiosa e sempre disposta a aprender coisas novas. Gosto de manter uma rotina organizada, sou apaixonada por cozinhar, cuidar da minha saúde e estou sempre buscando evoluir, tanto pessoal quanto profissionalmente. No meu tempo livre, adoro ler, estudar e também me aventurar por novos aprendizados, especialmente nas áreas que me desafiam.
+            </p>
+            <p  class="texto_lista"><strong>coisas que eu gosto de fazer: </strong></p>
+            <ul>
+                <li class="lista_itens">Brincar com meus gatinhos</li>
+                <li class="lista_itens">Ler livros</li>
+                <li class="lista_itens">Assistir video no Youtube</li>
+            </ul>
+            <a class="favorito" href="https://www.youtube.com/@CoolMarina/videos">Meu canal favorito</a>
+            <div id="container-botao"></div>
+        </section>
+    <img class="apresentacao__imagem" src="/assets/Gato amarelo.jpeg" alt="Foto do gatinho">
+    </main>
+    <table border="2">
+        <tbody>
+          <tr>
+            <td>Bolivia</td>
+            <td><img src="assets/Bolivia.png" alt="Bolivia" width="100"></td>
+          </tr>
+          <tr>
+            <td>Chile</td>
+            <td><img src="assets/Chile.png" alt="Chile" width="100"></td>
+          </tr>
+          <tr>
+            <td>Peru</td>
+            <td><img src="assets/Peru.jpg" alt="Peru" width="100"></td>
+          </tr>
+        </tbody>
+      </table>
+      <script>
+        const botao = document.createElement("button");
+      
+        botao.innerText = "Clique aqui";
+      
+        botao.classList.add("botao-js");
+      
+        botao.addEventListener("click", function () {
+          alert("Seja bem-vindo(a), espero que tenha gostado do que viu! ;)");
+        });
+    
+        document.getElementById("container-botao").appendChild(botao);
+      </script>
+      
+    <footer class="rodape">
+        <p> Desenvolvido por Stefani Osaida. </p>
+
+    </footer>
+</body>
+</html>
